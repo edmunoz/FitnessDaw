@@ -30,7 +30,7 @@ namespace FitnessDaw.Models
     public class RegisterExternalLoginModel
     {
         [Required]
-        [Display(Name = "Nombre de usuario")]
+        [Display(Name = "Nick")]
         public string UserName { get; set; }
 
         public string ExternalLoginData { get; set; }
@@ -58,7 +58,7 @@ namespace FitnessDaw.Models
     public class LoginModel
     {
         [Required]
-        [Display(Name = "Nombre de usuario")]
+        [Display(Name = "Nick")]
         public string UserName { get; set; }
 
         [Required]
@@ -73,8 +73,25 @@ namespace FitnessDaw.Models
     public class RegisterModel
     {
         [Required]
-        [Display(Name = "Nombre de usuario")]
+        [Display(Name = "Nick")]
         public string UserName { get; set; }
+
+        [Required]        
+        [Display(Name = "Edad")]
+        public string Age { get; set; }
+
+        [Required]
+        [Display(Name = "Peso en kg")]
+        public string Weight { get; set; }
+
+        [Required]
+        [Display(Name = "Altura en cm")]
+        public string Height { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string Email { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}.", MinimumLength = 6)]
