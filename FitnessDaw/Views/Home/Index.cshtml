@@ -16,30 +16,198 @@
                 <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
             </p>
         </div>
-    </section>
+    </section> 
 }
-<h3>We suggest the following:</h3>
-<ol class="round">
-    <li class="one">
-        <h5>Getting Started</h5>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
-    </li>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fitness Daw</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" >
+    <link rel='stylesheet' type='text/css' href='css/css-slider.css'/>
+    <script type="text/javascript" src="javascript/dietascript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
 
-    <li class="two">
-        <h5>Add NuGet packages and jump-start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
-    </li>
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
 
-    <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
-    </li>
-</ol>
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			//menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+<form id="form1" >
+	<!-- CABECERA -->
+	<nav>
+		<div id="cabezera">
+			<div id="contenidoCabezera">
+				<nav>
+		          	<ul id="nav">
+		            <li><a href=# class="current">Inicio</a></li>
+		            <li><a href="queComer.html">Que comer</a></li>
+		            <li><a href="queBeber.html">Que beber</a></li>
+		            <li><a href="recetas.html">Recetas</a></li>
+		            <li><a href="calendario.html">Calendario de Dieta</a></li>
+		            <li><a href="registroDaw.html">Registro</a></li>
+		          </ul>
+		        </nav>
+		    </div>
+		</div>
+		<div id="introCabecera" style="float: left">
+			<div id="logotipo">
+				<img  src="images/matrix-icon.png"  width="200" alt="Fitness"/> 
+			</div>
+			<div id="titulo" style="float: left">
+				<h1 id="title1">Mantente sano</h1>				
+				<h2 id="title2">Este es un sitio que mejorará tu estilo de vida...</h2>
+			</div>			
+		</div>
+	</nav>
+	
+	<!-- SECTION -->
+	<div id="bajo">
+		<div id="columnIzq">					
+		</div>
+<div id="columnCentro" style = "background-image: URL('images/bg.jpg');">
+	<h1> Bienvenido a Fitness DAW</h1>			
+	<!-- SLIDER -->
+	<div id="slider">
+		<input checked type="radio" name="slider" id="slide1" />
+		<input type="radio" name="slider" id="slide2" />
+		<input type="radio" name="slider" id="slide3" />
+		<input type="radio" name="slider" id="slide4" />
+		<input type="radio" name="slider" id="slide5" />
+		<div id="slides">
+				<div	 id="overflow">
+					<div class="inner">
+					<article>
+						<div class="info">
+							<h5>Noticia 1</h5>
+							<a href="#">Ver mas</a>
+						</div>
+						<img src="images/image1.jpg" alt="image1" />
+					</article>
+					<article>
+						<div class="info">
+							<h5>Noticia 2</h5>
+							<a href="#">Ver mas</a>
+						</div>
+						<img src="images/image2.jpg" alt="image2"/>
+					</article>
+					<article >
+						<div class="info">
+							<h5>Noticia 3</h5>
+							<a href="#">Ver mas</a>
+						</div>
+						<img src="images/image3.jpg" alt="image3"/>
+					</article>
+					<article >
+						<div class="info">
+								<h5>Noticia 4</h5>
+								<a href="#">Ver mas</a>
+							</div>
+							<img src="images/image4.jpg" alt="image4"/>
+					</article>
+					<article >
+						<div class="info">
+							<h5>Noticia 5</h5>
+							<a href="#">Ver mas</a>
+						</div>
+						<img src="images/image5.jpg" alt="image5"/>
+					</article>
+					</div>
+				</div>
+			</div>
+		<div id="controls">
+				<label for="slide1">
+					
+				</label>
+				<label for="slide2">
+					
+				</label>
+				<label for="slide3">
+					
+				</label>
+				<label for="slide4">
+					
+				</label>
+				<label for="slide5">
+					
+				</label>
+			</div>
+		<div id="active">
+			<label for="slide1">
+				
+			</label>
+			<label for="slide2">
+				
+			</label>
+			<label for="slide3">
+				
+			</label>
+			<label for="slide4">
+				
+			</label>
+			<label for="slide5">
+			
+			</label>
+		</div>
+	</div>
+	<div class="fb-comments" data-href="http://example.cohttps://www.facebook.com/esteban.munozguevara?ref=tn_tnmn" data-width="500" data-num-posts="10"></div>	
+</div>
+	
+		
+	<!-- ARTICLE -->
+		<article>
+			<div id="columnDer">
+				<div id="redessociales">
+					<a href ="http://www.facebook.com">
+						<img  src="images/Hover-Facebook-icon.png"  width="100" alt="facebook"/> 
+					</a>
+					<a href ="http://www.twitter.com">
+						<img  src="images/Hover-Twitter-icon.png"  width="100" alt="twiter"/>   
+					</a>
+					<!-- Link del RSS -->
+					<a href =#>
+						<img  src="images/RSS.png"  width="100" alt="rss"/>
+					</a>
+					<a href ="http://www.youtube.com">
+						<img  src="images/Hover-YouTube-icon.png"  width="100" alt="youtube"/>
+					</a>            		
+				</div>
+			</div>
+		</article>
+		<!-- FOOTER -->
+		<footer>
+			<div id="pie">
+				<span> Developers: Esteban Muñoz,Juan Mite,Marco Mendoza</span>                    
+			</div>
+		</footer>
+		</div>
+
+</form>
+</body>
+</html>
