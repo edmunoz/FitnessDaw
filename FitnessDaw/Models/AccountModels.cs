@@ -8,6 +8,7 @@ using System.Web.Security;
 
 namespace FitnessDaw.Models
 {
+
     public class UsersContext : DbContext
     {
         public UsersContext()
@@ -111,4 +112,5 @@ namespace FitnessDaw.Models
         public string ProviderDisplayName { get; set; }
         public string ProviderUserId { get; set; }
     }
+
 }
