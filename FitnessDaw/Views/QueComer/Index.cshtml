@@ -3,4 +3,153 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Que Comer</h2>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fitness Daw</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" >
+    <link rel='stylesheet' type='text/css' href='css/css-slider.css'/>
+    <script type="text/javascript" src="javascript/dietascript.js"></script>
+    <script type="text/javascript" src="javascript/queComerScript.js"></script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+<form id="form1" >
+	<!-- CABECERA -->
+	<nav>
+		<div id="cabezera">
+			<div id="contenidoCabezera">
+				<nav>
+		          	<ul id="nav">
+		            <li><a href="index.html">Inicio</a></li>
+		            <li><a href="queComer.html"class="current">Que comer</a></li>
+		            <li><a href="queBeber.html">Que beber</a></li>
+		            <li><a href="recetas.html">Recetas</a></li>
+		            <li><a href="calendario.html">Calendario de Dieta</a></li>
+		            <li><a href="registroDaw.html">Registro</a></li>
+		          </ul>
+		        </nav>
+		    </div>
+		</div>
+		<div id="introCabecera" style="float: left">
+			<div id="logotipo">
+					<img  src="images/matrix-icon.png"  width="250px"/> 
+			</div>
+			<div id="titulo" style="float: left">
+				<h1 id="title1">Mantente sano</h1>
+				
+				<h2 id="title2">Este es un sitio que mejorará tu estilo de vida!!!</h2>
+			</div>	
+		
+		</div>
+	</nav>
+	
+	<!-- SECTION -->
+	<div id="bajo">
+		<div id="columnIzq">					
+		</div>		
+		<div id="columnComentario"  style = "background-image: URL('images/bg.jpg');">
+			<div id="slider">
+				<input checked type="radio" name="slider" id="slide1" />
+				<input type="radio" name="slider" id="slide2" />
+				<input type="radio" name="slider" id="slide3" />
+				<input type="radio" name="slider" id="slide4" />
+				<input type="radio" name="slider" id="slide5" />
+				<div id="slides">
+					<div id="overflow">
+						<div class="inner">
+							<article>
+								<div class="info">
+									<h5>Introduccion</h5>
+									<a onclick="mostrarOcultar(0)">Ver mas</a>
+								</div>
+								<img src="images/1.jpg" />
+							</article>
+							<article>
+								<div class="info">
+									<h5>Frutas y verduras</h5>
+									<a onclick="mostrarOcultar(1)">Ver mas</a>
+								</div>
+								<img src="images/2.jpg" />
+							</article>
+							<article>
+								<div class="info">
+									<h5>Carnes magras</h5>
+									<a onclick="mostrarOcultar(2)">Ver mas</a>
+								</div>
+								<img src="images/3.jpg" />
+							</article>
+							<article>
+								<div class="info">
+									<h5>Cereales integrales</h5>
+									<a onclick="mostrarOcultar(3)">Ver mas</a>
+								</div>
+								<img src="images/4.jpg" />
+							</article>
+							
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="slide1"> </label>
+					<label for="slide2"> </label>
+					<label for="slide3"> </label>
+					<label for="slide4"> </label>
+					
+				</div>
+				<div id="active">
+					<label for="slide1"> </label>
+					<label for="slide2"> </label>
+					<label for="slide3"> </label>
+					<label for="slide4"> </label>
+					
+				</div>		
+				  			   		
+			</div>				
+      		<div class="fb-comments" data-href="https://www.facebook.com/groups/308556632539061/" data-width="500" data-num-posts="10"></div>
+        </div>
+      	
+         
+		<!-- ARTICLE -->
+		<article>
+			<div id="columnDer">
+				<div id="redessociales">
+					<a href ="http://www.facebook.com">
+						<img  src="images/Hover-Facebook-icon.png"  width="100px"/> 
+					</a>
+					<a href ="http://www.twitter.com">
+						<img  src="images/Hover-Twitter-icon.png"  width="100px"/>   
+					</a>
+					<!-- Link del RSS -->
+					<a href =#>
+						<img  src="images/RSS.png"  width="100px" href = #/>
+					</a>
+					<a href ="http://www.youtube.com">
+						<img  src="images/Hover-YouTube-icon.png"  width="100px"/>
+					</a>            		
+				</div>
+			</div>
+		</article>
+		<!-- FOOTER -->
+		<footer>
+			<div id="pie">
+				<span> Developers: Esteban Muñoz,Juan Mite,Marco Mendoza</span>                    
+			</div>
+		</footer>
+	</div>
+
+</form>
+</body>
+</html>

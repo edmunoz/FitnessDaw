@@ -192,6 +192,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Articulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +309,7 @@
     <Content Include="Views\QueComer\Index.cshtml" />
     <Content Include="Views\Recetas\Index.cshtml" />
     <Content Include="Views\QueBeber\Index.cshtml" />
+    <Content Include="Views\Calendario\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
