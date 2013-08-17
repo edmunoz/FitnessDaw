@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="proyectowebModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="proyectowebModelStoreContainer">
+    <EntitySet Name="articulo" EntityType="proyectowebModel.Store.articulo" store:Type="Tables" Schema="proyectoweb" />
+    <EntitySet Name="calendario" EntityType="proyectowebModel.Store.calendario" store:Type="Tables" Schema="proyectoweb" />
+    <EntitySet Name="receta" EntityType="proyectowebModel.Store.receta" store:Type="Tables" Schema="proyectoweb" />
+    <EntitySet Name="usuario" EntityType="proyectowebModel.Store.usuario" store:Type="Tables" Schema="proyectoweb" />
+    <AssociationSet Name="fk_Articulo_Usuario1" Association="proyectowebModel.Store.fk_Articulo_Usuario1">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="articulo" EntitySet="articulo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Calendario_Usuario1" Association="proyectowebModel.Store.fk_Calendario_Usuario1">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="calendario" EntitySet="calendario" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Receta_Usuario1" Association="proyectowebModel.Store.fk_Receta_Usuario1">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="receta" EntitySet="receta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Recetas_Calendario" Association="proyectowebModel.Store.fk_Recetas_Calendario">
+      <End Role="calendario" EntitySet="calendario" />
+      <End Role="receta" EntitySet="receta" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="articulo">
+    <Key>
+      <PropertyRef Name="idArticulo" />
+    </Key>
+    <Property Name="idArticulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="tipo" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="titulo" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="descripcion" Type="varchar" Nullable="false" MaxLength="2000" />
+    <Property Name="imagen" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="fuente" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="calendario">
+    <Key>
+      <PropertyRef Name="idCalendario" />
+    </Key>
+    <Property Name="idCalendario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="receta">
+    <Key>
+      <PropertyRef Name="idRecetas" />
+    </Key>
+    <Property Name="idRecetas" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="idCalendario" Type="int" Nullable="false" />
+    <Property Name="idRegistros" Type="int" Nullable="false" />
+    <Property Name="titulo" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="descripcion" Type="varchar" Nullable="false" MaxLength="2000" />
+    <Property Name="calorias" Type="float" Nullable="false" />
+    <Property Name="proteinas" Type="float" Nullable="false" />
+    <Property Name="grasas" Type="float" Nullable="false" />
+    <Property Name="gramos" Type="float" Nullable="false" />
+    <Property Name="carboidratos" Type="float" Nullable="false" />
+    <Property Name="calificacion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nick" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="correo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="contrasena" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="edad" Type="int" Nullable="false" />
+    <Property Name="peso" Type="float" Nullable="false" />
+    <Property Name="altura" Type="float" Nullable="false" />
+    <Property Name="fecha de registro" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_Articulo_Usuario1">
+    <End Role="usuario" Type="proyectowebModel.Store.usuario" Multiplicity="1" />
+    <End Role="articulo" Type="proyectowebModel.Store.articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="articulo">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Calendario_Usuario1">
+    <End Role="usuario" Type="proyectowebModel.Store.usuario" Multiplicity="1" />
+    <End Role="calendario" Type="proyectowebModel.Store.calendario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="calendario">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Receta_Usuario1">
+    <End Role="usuario" Type="proyectowebModel.Store.usuario" Multiplicity="1" />
+    <End Role="receta" Type="proyectowebModel.Store.receta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="receta">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Recetas_Calendario">
+    <End Role="calendario" Type="proyectowebModel.Store.calendario" Multiplicity="1" />
+    <End Role="receta" Type="proyectowebModel.Store.receta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="calendario">
+        <PropertyRef Name="idCalendario" />
+      </Principal>
+      <Dependent Role="receta">
+        <PropertyRef Name="idCalendario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
