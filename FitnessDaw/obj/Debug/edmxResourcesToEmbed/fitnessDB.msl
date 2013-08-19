@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="proyectowebModelStoreContainer" CdmEntityContainer="FitnessDbEntities1">
+    <EntitySetMapping Name="articuloes">
+      <EntityTypeMapping TypeName="proyectowebModel.articulo">
+        <MappingFragment StoreEntitySet="articulo">
+          <ScalarProperty Name="idArticulo" ColumnName="idArticulo" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
+          <ScalarProperty Name="fuente" ColumnName="fuente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="calendarios">
+      <EntityTypeMapping TypeName="proyectowebModel.calendario">
+        <MappingFragment StoreEntitySet="calendario">
+          <ScalarProperty Name="idCalendario" ColumnName="idCalendario" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="recetas">
+      <EntityTypeMapping TypeName="proyectowebModel.receta">
+        <MappingFragment StoreEntitySet="receta">
+          <ScalarProperty Name="idRecetas" ColumnName="idRecetas" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idCalendario" ColumnName="idCalendario" />
+          <ScalarProperty Name="idRegistros" ColumnName="idRegistros" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="calorias" ColumnName="calorias" />
+          <ScalarProperty Name="proteinas" ColumnName="proteinas" />
+          <ScalarProperty Name="grasas" ColumnName="grasas" />
+          <ScalarProperty Name="gramos" ColumnName="gramos" />
+          <ScalarProperty Name="carboidratos" ColumnName="carboidratos" />
+          <ScalarProperty Name="calificacion" ColumnName="calificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="proyectowebModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nick" ColumnName="nick" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="peso" ColumnName="peso" />
+          <ScalarProperty Name="altura" ColumnName="altura" />
+          <ScalarProperty Name="fecha_de_registro" ColumnName="fecha de registro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

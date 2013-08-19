@@ -40,10 +40,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -181,19 +193,48 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="articulo.cs">
+      <DependentUpon>FitnessDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="calendario.cs">
+      <DependentUpon>FitnessDb.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CalendarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InicioController.cs" />
     <Compile Include="Controllers\QueBeberController.cs" />
     <Compile Include="Controllers\QueComerController.cs" />
     <Compile Include="Controllers\RecetasController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="FitnessDb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitnessDb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessDb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitnessDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessDb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitnessDb.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Articulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receta.cs">
+      <DependentUpon>FitnessDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.cs">
+      <DependentUpon>FitnessDb.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -252,7 +293,25 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <EntityDeploy Include="FitnessDb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FitnessDb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="FitnessDb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FitnessDb.edmx</DependentUpon>
+      <LastGenOutput>FitnessDb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FitnessDb.edmx.diagram">
+      <DependentUpon>FitnessDb.edmx</DependentUpon>
+    </Content>
+    <Content Include="FitnessDb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FitnessDb.edmx</DependentUpon>
+      <LastGenOutput>FitnessDb.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Schema\fitnessDB.sql" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -267,7 +326,9 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -306,16 +367,45 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Inicio\Index.cshtml" />
+    <Content Include="Views\Inicio\Details.cshtml" />
+    <Content Include="Views\Inicio\Create.cshtml" />
+    <Content Include="Views\Inicio\Edit.cshtml" />
+    <Content Include="Views\Inicio\Delete.cshtml" />
     <Content Include="Views\QueComer\Index.cshtml" />
-    <Content Include="Views\Recetas\Index.cshtml" />
+    <Content Include="Views\QueComer\Details.cshtml" />
+    <Content Include="Views\QueComer\Create.cshtml" />
+    <Content Include="Views\QueComer\Edit.cshtml" />
+    <Content Include="Views\QueComer\Delete.cshtml" />
     <Content Include="Views\QueBeber\Index.cshtml" />
-    <Content Include="Views\Calendario\index.cshtml" />
+    <Content Include="Views\QueBeber\Details.cshtml" />
+    <Content Include="Views\QueBeber\Create.cshtml" />
+    <Content Include="Views\QueBeber\Edit.cshtml" />
+    <Content Include="Views\QueBeber\Delete.cshtml" />
+    <Content Include="Views\Calendario\Index.cshtml" />
+    <Content Include="Views\Calendario\Details.cshtml" />
+    <Content Include="Views\Calendario\Create.cshtml" />
+    <Content Include="Views\Calendario\Edit.cshtml" />
+    <Content Include="Views\Calendario\Delete.cshtml" />
+    <Content Include="Views\Recetas\Index.cshtml" />
+    <Content Include="Views\Recetas\Details.cshtml" />
+    <Content Include="Views\Recetas\Create.cshtml" />
+    <Content Include="Views\Recetas\Edit.cshtml" />
+    <Content Include="Views\Recetas\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

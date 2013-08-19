@@ -1,0 +1,71 @@
+﻿@model FitnessDaw.usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>usuario</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.idUsuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.idUsuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nick)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nick)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.correo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.correo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contrasena)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contrasena)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.edad)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.edad)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.peso)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.peso)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.altura)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.altura)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fecha_de_registro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fecha_de_registro)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,92 @@
+﻿@model FitnessDaw.usuario
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>usuario</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.idUsuario)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.idUsuario)
+            @Html.ValidationMessageFor(model => model.idUsuario)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.nick)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nick)
+            @Html.ValidationMessageFor(model => model.nick)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.correo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.correo)
+            @Html.ValidationMessageFor(model => model.correo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.contrasena)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.contrasena)
+            @Html.ValidationMessageFor(model => model.contrasena)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.edad)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.edad)
+            @Html.ValidationMessageFor(model => model.edad)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.peso)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.peso)
+            @Html.ValidationMessageFor(model => model.peso)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.altura)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.altura)
+            @Html.ValidationMessageFor(model => model.altura)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fecha_de_registro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fecha_de_registro)
+            @Html.ValidationMessageFor(model => model.fecha_de_registro)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

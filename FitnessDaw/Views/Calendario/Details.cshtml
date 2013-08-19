@@ -1,0 +1,29 @@
+﻿@model FitnessDaw.calendario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>calendario</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.idCalendario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.idCalendario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.usuario.nick)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.usuario.nick)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
