@@ -200,6 +200,8 @@
       <DependentUpon>FitnessDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdministrarArticulosController.cs" />
+    <Compile Include="Controllers\AdministrarRecetasController.cs" />
     <Compile Include="Controllers\CalendarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InicioController.cs" />
@@ -397,6 +399,7 @@
     <Content Include="Views\Recetas\Create.cshtml" />
     <Content Include="Views\Recetas\Edit.cshtml" />
     <Content Include="Views\Recetas\Delete.cshtml" />
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -404,3 +404,7 @@ C:\Users\Esteban\Desktop\Trabajos\Desarrollo de aplicaciones web\FitnessDaw\Fitn
 C:\Users\Esteban\Desktop\Trabajos\Desarrollo de aplicaciones web\FitnessDaw\FitnessDaw\obj\Debug\FitnessDaw.csprojResolveAssemblyReference.cache
 C:\Users\Esteban\Desktop\Trabajos\Desarrollo de aplicaciones web\FitnessDaw\FitnessDaw\obj\Debug\FitnessDaw.dll
 C:\Users\Esteban\Desktop\Trabajos\Desarrollo de aplicaciones web\FitnessDaw\FitnessDaw\obj\Debug\FitnessDaw.pdb
+C:\Users\Esteban\Documents\GitHub\FitnessDaw\FitnessDaw\bin\MySql.Data.dll
+C:\Users\Esteban\Documents\GitHub\FitnessDaw\FitnessDaw\bin\MySql.Data.Entity.dll
+C:\Users\Esteban\Documents\GitHub\FitnessDaw\FitnessDaw\bin\MySql.Web.dll
+>>>>>>> c4f98a6ada6ff1db2da5a49060cbc75ced7f9ccb
