@@ -1,0 +1,71 @@
+﻿@model MvcApplication1.Models.Receta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Receta</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.idReceta)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.idReceta)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.titulo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.titulo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.descripcion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descripcion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.calorias)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.calorias)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.proteinas)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.proteinas)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.grasas)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.grasas)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.carboidratos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.carboidratos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.calificacion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.calificacion)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
