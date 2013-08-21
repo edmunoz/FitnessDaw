@@ -13,7 +13,7 @@ namespace MvcApplication1
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
-
+                    
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
@@ -34,7 +34,7 @@ namespace MvcApplication1
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css","~/Content/Css-slider.css",
-                                                                    "~/Content/estilo.css", "~/Content/rss.css", "~/Content/calendario.css"));
+                                                                    "~/Content/estilo.css", "~/Content/rss.css", "~/Content/calendario.css","~/Content/jquery-frontier-cal.css"));
 
            
 
@@ -44,7 +44,10 @@ namespace MvcApplication1
 
             bundles.Add(new StyleBundle("~/Content/jquery-ui/flick/css").Include("~/Content/jquery-ui/flick/jquery-ui-1.8.2.custom.css"));
 
-            
+            bundles.Add(new StyleBundle("~/Content/styles/css").Include("~/Content/styles/base.css", "~/Content/styles/jquery.fancybox-1.3.4.css", "~/Content/styles/style.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/styles/scripts").Include(                      
+                        "~/Scripts/scripts/jquery.pikachoose"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                        "~/Content/themes/base/jquery.ui.accordion.css",

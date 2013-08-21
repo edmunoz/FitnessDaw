@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MvcApplication1.Models.Articulo>
+
+@{
+    ViewBag.Title = "Que Beber";
+}
+ @Styles.Render("~/Content/styles/css")
+<body>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=145887482275458";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <div class="wrapper">
+    <div class="border"></div>
+    <article>
+      <h3>Headline: Lorem Ipsum</h3>
+      <div class="date"><span class="day">24</span> <span class="month">May</span> <span class="year">2011</span> </div>
+      <img src="images/home/3.jpg" width="300" class="right" alt="" />
+      <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+      <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur elementum molestie. Donec eget orci vitae felis malesuada gravida a a magna. Nulla quis nisi dui. Aliquam eu risus et dui tempus pretium. Nunc vulputate ante ut dui cursus ultricies. Aliquam eu arcu et neque molestie porta vitae quis magna. Quisque convallis, justo in sagittis egestas, arcu diam malesuada eros, non dignissim turpis lacus sed dolor.</p>
+      </blockquote>
+         <div class="fb-comments" data-href="https://www.facebook.com/esteban.munozguevara" data-width="470"></div>	
+    </article>
+    <aside class="sidebar">
+      <h3>Sidebar Widget</h3>
+      <img src="images/home/1.jpg" width="280" alt="" />
+      <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. In turpis pulvinar facilisis. Ut felis.<br>
+        <a href="" class="right" style="padding-top:7px"><strong>Continue Reading &raquo;</strong></a></p>
+    </aside>
+    <div class="border2"></div>
+    <br>
+  </div>
+
+ 

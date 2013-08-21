@@ -13,19 +13,31 @@ namespace MvcApplication1.Controllers
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
             return View();
-        }
+        }    
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your app description page.";
-
+        public ActionResult Comer()
+        {  
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Beber()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult Receta()
+        {
+            return View();
+        }
+
+        public ActionResult Calendario()
+        {
+            return View();
+        }
+
+
+        public ActionResult Registro()
+        {
             return View();
         }
     }

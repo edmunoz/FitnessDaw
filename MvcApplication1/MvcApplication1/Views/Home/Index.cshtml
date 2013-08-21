@@ -1,45 +1,101 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IEnumerable<MvcApplication1.Models.Articulo>
+
+@{
+    ViewBag.Title = "Fitness Daw";
 }
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
-            <p>
-                To learn more about ASP.NET MVC visit
-                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                If you have any questions about ASP.NET MVC visit
-                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
-            </p>
+<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+ @Styles.Render("~/Content/styles/css")
+
+<div id="fb-root"></div>
+    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=145887482275458";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<hgroup class="intro">
+    <h1 class="title">Mantente sano</h1>
+    <h3 class="tagline">Este es un sitio que mejorará tu estilo de vida...</h3>
+</hgroup>   
+   
+ <div class="reservations"><br />
+     <span class="reservations-title">Fitness Daw</span>
+     <hr class="hr-solid" />
+     <span style="font-family: 'Lobster13Regular', cursive;">Web Development</span>
+     <hr class="hr-dashed" />
+          
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="wrapper">
+        <div class="pikachoose">
+          <ul id="pikame">
+            <li><a href=""><img src="Images/imagesFitness/home/1.jpg" alt="" /></a></li>
+            <li><a href=""><img src="Images/imagesFitness/home/2.jpg" alt="" /></a></li>
+            <li><a href=""><img src="Images/imagesFitness/home/3.jpg" alt="" /></a></li>
+            <li><a href=""><img src="Images/imagesFitness/home/4.jpg" alt="" /></a></li>
+          </ul>
         </div>
-    </section>
-}
-<h3>We suggest the following:</h3>
-<ol class="round">
-    <li class="one">
-        <h5>Getting Started</h5>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
-    </li>
+        <div class="clear"></div>
+        <div class="border"></div>
+        <div class="home-widget">
+          <h3>Lorem Ipsum</h3>
+          <img src="Images/imagesFitness/home/3.jpg" width="300" alt="" />
+          <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae.</p>
+        </div>
+        <div class="home-widget">
+          <h3>Lorem Ipsum</h3>
+          <img src="Images/imagesFitness/home/4.jpg" width="300" alt="" />
+          <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae.</p>
+        </div>
+        <div class="home-widget">
+          <h3>Lorem Ipsum</h3>
+          <img src="Images/imagesFitness/home/1.jpg" width="300" alt="" />
+          <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae.</p>
+        </div>
+        <div class="border2"></div>
+        <br />
+        <aside id="pricing-table" class="clear">
+          <div class="plan">
+            <h3>Breakfast<span>$99</span></h3>
+            <a class="button" href="">Order Now</a>
+            <ul>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+            </ul>
+          </div>
+          <div class="plan">
+            <h3>Lunch<span>$99</span></h3>
+            <a class="button" href="">Order Now</a>
+            <ul>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+            </ul>
+          </div>
+          <div class="plan">
+            <h3>Dinner<span>$99</span></h3>
+            <a class="button" href="">Order Now</a>
+            <ul>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+              <li><strong style="text-transform:uppercase">lorem Ipsum</strong> Dolor Sit Amet</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
 
-    <li class="two">
-        <h5>Add NuGet packages and jump-start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
-    </li>
-
-    <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
-    </li>
-</ol>
+<div class="fb-comments" data-href="https://www.facebook.com/esteban.munozguevara" data-width="470"></div>	

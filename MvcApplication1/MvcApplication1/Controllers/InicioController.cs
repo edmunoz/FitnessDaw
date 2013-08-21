@@ -18,7 +18,8 @@ namespace MvcApplication1.Controllers
 
         public ActionResult Index()
         {
-            return View(db.Articulo.ToList());
+            //db.Articulo.ToList()
+            return View();
         }
 
         //
