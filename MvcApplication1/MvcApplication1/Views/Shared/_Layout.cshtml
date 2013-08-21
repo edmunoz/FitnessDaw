@@ -10,6 +10,7 @@
         @Styles.Render("~/Content/styles/css")
         @Scripts.Render("~/bundles/modernizr")
         @Scripts.Render("~/bundles/styles/scripts")
+        
  
     </head>
     <body>
@@ -17,12 +18,12 @@
         <header>
             <nav>
                 <ul id="nav"
-                        <li>@Html.ActionLink("Inicio", "Index", "Home")</li>                                            
-                        <li>@Html.ActionLink("Que Comer", "Comer", "Home")</li>
-                        <li>@Html.ActionLink("Que Beber", "Beber", "Home")</li>
-                        <li>@Html.ActionLink("Recetas", "Receta", "Home")</li>                                                 
-                        <li>@Html.ActionLink("Calendario", "Calendario", "Home")</li>
-                        <li>@Html.ActionLink("Registro", "Registro", "Home")</li>
+                        <li>@Html.ActionLink("Inicio", "Index", "Inicio")</li>                                            
+                        <li>@Html.ActionLink("Que Comer", "Index", "QueComer")</li>
+                        <li>@Html.ActionLink("Que Beber", "Index", "QueBeber")</li>
+                        <li>@Html.ActionLink("Recetas", "Index", "Receta")</li>                                                 
+                        <li>@Html.ActionLink("Calendario de Dieta", "Index", "Calendario")</li>
+                        <li>@Html.ActionLink("Registro", "Index", "Registro")</li>
                  </ul>                   
             </nav>        
         </header>
@@ -63,6 +64,8 @@
         <br>
         <br />
         </span></span></footer>
-        </div>      
+        </div> 
+          @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)    
     </body>
 </html>

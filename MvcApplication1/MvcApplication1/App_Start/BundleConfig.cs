@@ -33,8 +33,7 @@ namespace MvcApplication1
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css","~/Content/Css-slider.css",
-                                                                    "~/Content/estilo.css", "~/Content/rss.css", "~/Content/calendario.css","~/Content/jquery-frontier-cal.css"));
+           
 
            
 

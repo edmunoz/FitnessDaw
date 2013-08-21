@@ -195,6 +195,6 @@ C:\Users\Esteban\Documents\GitHub\FitnessDaw\MvcApplication1\MvcApplication1\bin
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MvcApplication1\MvcApplication1\bin\ru\System.Spatial.resources.dll
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MvcApplication1\MvcApplication1\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MvcApplication1\MvcApplication1\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Esteban\Documents\GitHub\FitnessDaw\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb
+C:\Users\Esteban\Documents\GitHub\FitnessDaw\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache

@@ -105,7 +105,7 @@ strong {
 	font-style: normal;
 }
 body {
-	background: #f5f0e0 url(../Images/imagesFitness/images/noise.png);
+	background: #f5f0e0 url(../Images/images/noise.png);
 	font-family: Century Gothic, sans-serif;
 	color: #252525;
 	font-size: 14px;
@@ -276,7 +276,7 @@ a {
 	transform: rotate(-90deg);
 }
 #container {
-	background: url(../Images/imagesFitness/bg.png) center top repeat-x;
+	background: url(../Images/images/bg.png) center top repeat-x;
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
@@ -303,7 +303,7 @@ ul#nav li a {
 	margin: 0 32px 0 32px;
 	color: #9c5959;
 	text-decoration: none;
-	background: url("../Images/imagesFitness/label.png") 0 -149px no-repeat;
+	background: url("../Images/images/label.png") 0 -149px no-repeat;
 	-webkit-transition: all .20s ease-out;
 	-moz-transition: all .20s ease-out;
 	-o-transition: all .20s ease-out;
@@ -312,7 +312,7 @@ ul#nav li a {
 	border-bottom: 0px dotted #9c5959;
 }
 ul#nav li a:hover, ul#nav li .current {
-	background: url("Images/imagesFitness/label.png") 0 0 no-repeat;
+	background: url("Images/images/label.png") 0 0 no-repeat;
 	color: #eee9d9;
 	-webkit-transition: all .20s ease-out;
 	-moz-transition: all .20s ease-out;
@@ -562,7 +562,7 @@ text-align: center; /*        width:  892px; /* total computed width = 222 x 3 +
 	margin: 15px;
 }
 blockquote {
-	background: transparent url(../Images/imagesFitness/blockquote.png) no-repeat 0px 30px;
+	background: transparent url(../Images/images/blockquote.png) no-repeat 0px 30px;
 	padding: 30px;
 	font-style: italic;
 }
