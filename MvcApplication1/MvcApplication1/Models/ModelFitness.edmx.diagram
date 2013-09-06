@@ -5,10 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d5e28c18e34b427bacf593c26332598d" Name="Diagrama1">
-        <EntityTypeShape EntityType="FitnessDbModel.Articulo" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="FitnessDbModel.Calendario" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessDbModel.Articulo" Width="1.5" PointX="6.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessDbModel.Calendario" Width="1.5" PointX="3.25" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="FitnessDbModel.Receta" Width="1.5" PointX="4.875" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="FitnessDbModel.Usuario" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessDbModel.Usuario" Width="1.5" PointX="0.875" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="FitnessDbModel.idCalendario" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
