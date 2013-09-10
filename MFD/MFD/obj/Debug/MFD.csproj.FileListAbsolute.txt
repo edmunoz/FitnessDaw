@@ -97,4 +97,3 @@ C:\Users\Esteban\Documents\Visual Studio 2012\Projects\MFD\MFD\bin\zh-Hans\Syste
 C:\Users\Esteban\Documents\Visual Studio 2012\Projects\MFD\MFD\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Esteban\Documents\Visual Studio 2012\Projects\MFD\MFD\obj\Debug\MFD.dll
 C:\Users\Esteban\Documents\Visual Studio 2012\Projects\MFD\MFD\obj\Debug\MFD.pdb
-C:\Users\Esteban\Documents\Visual Studio 2012\Projects\MFD\MFD\obj\Debug\MFD.csprojResolveAssemblyReference.cache

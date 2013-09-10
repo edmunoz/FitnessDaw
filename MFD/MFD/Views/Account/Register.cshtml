@@ -11,35 +11,47 @@
 </hgroup>
 
 @using (Html.BeginForm()) {
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     @Html.AntiForgeryToken()
     @Html.ValidationSummary()
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+        
         <ol>
             <li>
                 @Html.LabelFor(m => m.UserName) <br />
-                @Html.TextBoxFor(m => m.UserName)
-                 <br />
+                @Html.TextBoxFor(m => m.UserName)          
+            </li>
+            <li>
+                @Html.LabelFor(m => m.email)<br />
+                @Html.TextBoxFor(m => m.email)
             </li>
             <li>
                 @Html.LabelFor(m => m.Password)<br />
-                @Html.PasswordFor(m => m.Password)
-                 <br />
+                @Html.PasswordFor(m => m.Password)                 
             </li>
             <li>
                 @Html.LabelFor(m => m.ConfirmPassword) <br />
-                @Html.PasswordFor(m => m.ConfirmPassword)
-                 <br />
+                @Html.PasswordFor(m => m.ConfirmPassword)                 
+            </li>
+             <li>
+                @Html.LabelFor(m => m.edad) <br />
+                @Html.TextBoxFor(m => m.edad)                 
+            </li>
+            <li>
+                @Html.LabelFor(m => m.peso)<br />
+                @Html.TextBoxFor(m => m.peso)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.altura)<br />
+                @Html.TextBoxFor(m => m.altura)
             </li>
         </ol>
          <br />
         <input class="button" type="submit" value="Registrarse" />
+  
         <br /><br />
 }
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}

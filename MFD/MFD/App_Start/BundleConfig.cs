@@ -22,7 +22,7 @@ namespace MFD
             // preparado para la producción y podrá utilizar la herramienta de creación disponible en http://modernizr.com para seleccionar solo las pruebas que necesite.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include("~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css", "~/Content/jquery.fancybox-1.3.4.css", "~/Content/style.css"));
 
             bundles.Add(new ScriptBundle("~/Content/scripts/js").Include("~/Content/scripts/jquery.fancybox-1.3.4.pack.js", "~/Content/scripts/jquery.pikachoose.js"));
 

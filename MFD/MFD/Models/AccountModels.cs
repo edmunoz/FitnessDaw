@@ -76,6 +76,10 @@ namespace MFD.Models
         [Display(Name = "Nombre de usuario")]
         public string UserName { get; set; }
 
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string email { get; set; }
+
         [Required]
         [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}.", MinimumLength = 6)]
         [DataType(DataType.Password)]
@@ -86,6 +90,19 @@ namespace MFD.Models
         [Display(Name = "Confirmar contraseña")]
         [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "Edad")]
+        public float edad { get; set; }
+
+        [Required]
+        [Display(Name = "Peso en kg")]
+        public float peso { get; set; }
+
+
+        [Required]
+        [Display(Name = "Altura en cm")]
+        public float altura { get; set; }
     }
 
     public class ExternalLogin

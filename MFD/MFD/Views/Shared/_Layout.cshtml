@@ -6,19 +6,21 @@
         <title>Fitness Daw</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/styles/css") 
-        @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")   
+     
     </head>
     <body>
 
          <div id="container">
+
              <header>
             <div class="container">                            
                     <nav>
                         <ul id="nav">                       
                             <li>@Html.ActionLink("Inicio", "Index", "Articulo")</li>
                             <li>@Html.ActionLink("Que comer", "Index", "QueComer")</li>
-                            <li>@Html.ActionLink("Que beber", "QueBeber", "Articulo")</li>
+                            <li>@Html.ActionLink("Que beber", "Index", "QueBeber")</li>
                             <li>@Html.ActionLink("Recetas", "Index", "Receta")</li>
                             <li>@Html.ActionLink("Calendario de Dieta", "Calendario", "Articulo")</li>
                             <li>@Html.ActionLink("Iniciar sesión", "Login", "Account")</li>

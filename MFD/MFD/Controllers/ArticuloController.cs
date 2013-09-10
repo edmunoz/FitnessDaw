@@ -21,6 +21,11 @@ namespace MFD.Controllers
             return View(db.Articulos.ToList());
         }
 
+        public ActionResult Articulo()
+        {
+            return View();
+        }
+
         public ActionResult Calendario()
         {
             return View();

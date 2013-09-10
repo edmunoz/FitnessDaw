@@ -4,13 +4,12 @@
     ViewBag.Title = "Iniciar sesión";
 }
 
-@Styles.Render("~/Content/styles/css") 
 
 <hgroup class="title">
     <h4>@ViewBag.Title.</h4>
 </hgroup>
 
-<section id="loginForm">
+
     <br>
     <br>
     <br>    
@@ -22,14 +21,14 @@
     
         <ol>
             <li>
-                @Html.LabelFor(m => m.UserName)
+                @Html.LabelFor(m => m.UserName)<br />
                 @Html.TextBoxFor(m => m.UserName)
                 @Html.ValidationMessageFor(m => m.UserName)
                 <br>
                 <br>
             </li>
             <li>
-                @Html.LabelFor(m => m.Password)
+                @Html.LabelFor(m => m.Password)<br />
                 @Html.PasswordFor(m => m.Password)
                 @Html.ValidationMessageFor(m => m.Password)
                 <br>
@@ -48,7 +47,7 @@
         @Html.ActionLink("Regístrese", "Register") si no tiene ninguna cuenta.
     </p>
 }
-</section>
+
 
 
 @section Scripts {
