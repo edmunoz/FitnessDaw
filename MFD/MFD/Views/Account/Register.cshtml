@@ -1,0 +1,45 @@
+﻿@model MFD.Models.RegisterModel
+@{
+    ViewBag.Title = "Registrarse";
+}
+
+
+<hgroup class="title">
+    <h3>@ViewBag.Title.</h3>   
+    <h6>Cree una cuenta nueva.</h6>
+    
+</hgroup>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.UserName) <br />
+                @Html.TextBoxFor(m => m.UserName)
+                 <br />
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Password)<br />
+                @Html.PasswordFor(m => m.Password)
+                 <br />
+            </li>
+            <li>
+                @Html.LabelFor(m => m.ConfirmPassword) <br />
+                @Html.PasswordFor(m => m.ConfirmPassword)
+                 <br />
+            </li>
+        </ol>
+         <br />
+        <input class="button" type="submit" value="Registrarse" />
+        <br /><br />
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
