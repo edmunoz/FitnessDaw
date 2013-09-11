@@ -54,7 +54,7 @@ namespace MFD.Controllers
         {
             WebSecurity.Logout();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Articulo");
         }
 
         //
@@ -78,10 +78,10 @@ namespace MFD.Controllers
             {
                 // Intento de registrar al usuario
                 try
-                {
+                {                    
                     WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
                     WebSecurity.Login(model.UserName, model.Password);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Articulo");
                 }
                 catch (MembershipCreateUserException e)
                 {
@@ -337,7 +337,7 @@ namespace MFD.Controllers
             }
             else
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Articulo");
             }
         }
 

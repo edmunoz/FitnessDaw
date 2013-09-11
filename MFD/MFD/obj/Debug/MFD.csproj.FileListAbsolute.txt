@@ -194,6 +194,6 @@ C:\Users\Esteban\Documents\GitHub\FitnessDaw\MFD\MFD\bin\ko\System.Spatial.resou
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MFD\MFD\bin\ru\System.Spatial.resources.dll
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MFD\MFD\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MFD\MFD\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Esteban\Documents\GitHub\FitnessDaw\MFD\MFD\obj\Debug\MFD.csprojResolveAssemblyReference.cache
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MFD\MFD\obj\Debug\MFD.dll
 C:\Users\Esteban\Documents\GitHub\FitnessDaw\MFD\MFD\obj\Debug\MFD.pdb
+C:\Users\Esteban\Documents\GitHub\FitnessDaw\MFD\MFD\obj\Debug\MFD.csprojResolveAssemblyReference.cache

@@ -16,6 +16,8 @@ namespace MFD.Models
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Articulo> Articulos { get; set; }
+        public DbSet<Receta> Recetas { get; set; }
     }
 
     [Table("UserProfile")]
