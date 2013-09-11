@@ -9,7 +9,7 @@ namespace MFD
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js", "~/Scripts/jquery.fancybox-1.3.4.pack.js", "~/Scripts/jquery.pikachoose.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
@@ -22,13 +22,9 @@ namespace MFD
             // preparado para la producción y podrá utilizar la herramienta de creación disponible en http://modernizr.com para seleccionar solo las pruebas que necesite.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include("~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css", "~/Content/jquery.fancybox-1.3.4.css", "~/Content/style.css"));
-
-            bundles.Add(new ScriptBundle("~/Content/scripts/js").Include("~/Content/scripts/jquery.fancybox-1.3.4.pack.js", "~/Content/scripts/jquery.pikachoose.js"));
-
-            bundles.Add(new StyleBundle("~/Content/styles/css").Include("~/Content/styles/base.css", "~/Content/styles/jquery.fancybox-1.3.4.css", "~/Content/styles/style.css"));
-
-
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css", "~/Content/jquery.fancybox-1.3.4.css", "~/Content/base.css"));
+                        
+            
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
                         "~/Content/themes/base/jquery.ui.resizable.css",

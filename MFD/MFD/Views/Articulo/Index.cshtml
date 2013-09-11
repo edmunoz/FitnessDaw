@@ -4,6 +4,77 @@
     ViewBag.Title = "Index";
 }
 
+<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+
+@Styles.Render("~/Content/styles/css") 
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#pikame").PikaChoose();
+    });
+</script>
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=145887482275458";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<hgroup class="intro">
+    <h1 class="title">Mantente sano</h1>
+    <h3 class="tagline">Este es un sitio que mejorará tu estilo de vida...</h3>
+</hgroup>   
+   
+ <div class="reservations"><br />
+     <span class="reservations-title">Fitness Daw</span>
+     <hr class="hr-solid" />
+     <span style="font-family: 'Lobster13Regular', cursive;">Web Development</span>
+     <hr class="hr-dashed" />          
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="wrapper">
+        <div class="pikachoose">
+          <ul id="pikame">
+            <li><img src="Images/images/home/1.jpg" alt="" /></li>
+            <li><img src="Images/images/home/2.jpg" alt="" /></li>
+            <li><img src="Images/images/home/3.jpg" alt="" /></li>
+            <li><img src="Images/images/home/4.jpg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="border"></div>
+        <div class="home-widget">
+          <h3>Lorem Ipsum</h3>
+          <img src="Images/images/home/3.jpg" width="300" alt="" />
+          <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae.</p>
+        </div>
+        <div class="home-widget">
+          <h3>Lorem Ipsum</h3>
+          <img src="Images/images/home/4.jpg" width="300" alt="" />
+          <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae.</p>
+        </div>
+        <div class="home-widget">
+          <h3>Lorem Ipsum</h3>
+          <img src="Images/images/home/1.jpg" width="300" alt="" />
+          <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae.</p>
+        </div>        
+        <br />       
+      </div>
+
+<div class="fb-comments" data-href="https://www.facebook.com/FitnessDAW?notif_t=fbpage_fan_invite" data-width="470"></div>
 
 <p>
     @Html.ActionLink("Create New", "Create")

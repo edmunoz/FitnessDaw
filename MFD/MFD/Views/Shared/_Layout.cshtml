@@ -1,21 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
     <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
         <title>Fitness Daw</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")   
+ 
      
     </head>
     <body>
+        <div id="container">
 
-         <div id="container">
-
-             <header>
-            <div class="container">                            
+             <header>                               
                     <nav>
                         <ul id="nav">                       
                             <li>@Html.ActionLink("Inicio", "Index", "Articulo")</li>
@@ -23,60 +21,58 @@
                             <li>@Html.ActionLink("Que beber", "Index", "QueBeber")</li>
                             <li>@Html.ActionLink("Recetas", "Index", "Receta")</li>
                             <li>@Html.ActionLink("Calendario de Dieta", "Calendario", "Articulo")</li>
-                            <li>@Html.ActionLink("Iniciar sesión", "Login", "Account")</li>
-                            
+                            <li>@Html.ActionLink("Iniciar sesión", "Login", "Account")</li>                            
                         </ul>
-                    </nav>           
-            </div>
-        </header>
+                    </nav>              
+             </header>
        
              <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
-        </div>
+                 @RenderSection("featured", required: false)
+                 <section class="content-wrapper main-content clear-fix">
+                     @RenderBody()
+                 </section>
+            </div>
 
-             <footer>
-            <div class="border"></div>
-            <div class="footer-widget">
-                <h4>Some Title</h4>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. </p>
-            </div>
-            <div class="footer-widget">
-                <h4>From The Blog</h4>
-                <ul class="blog">
-                    <li><a href="#">Lorem Ipsum Dolor</a><br/>
-                        Orciint erdum condimen terdum nulla mcorper elit nam curabitur... </li>
-                    <li><a href="#">Praesent Et Eros</a><br/>
-                        Orciint erdum condimen terdum nulla mcorper elit nam curabitur... </li>
-                    <li><a href="#">Suspendisse In Neque</a><br/>
-                        Orciint erdum condimen terdum nulla mcorper elit nam curabitur... </li>
-                    <li><a href="#">Suspendisse In Neque</a><br/>
-                        Orciint erdum condimen terdum nulla mcorper elit nam curabitur... </li>
-                </ul>
-            </div>
-            <div class="footer-widget">
-                <h4>We Are Social!</h4>
-                <div id="social"> 
-                    <a href="https://twitter.com/FitnessDAW" class="s3d twitter" target="_blank"> Twitter <span class="icons twitter"></span> </a> 
-                    <a href="https://www.facebook.com/FitnessDAW?notif_t=fbpage_fan_invite" class="s3d facebook" target="_blank"> Facebook <span class="icons facebook"></span> </a>
+            <footer>
+                <div class="border"></div>
+                <div class="footer-widget">
+                    <h4>Some Title</h4>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. </p>
                 </div>
-            </div>
-            <div class="border2"></div>
-            <br />
-            <span class="copyright">
-                <span class="left"><br />
-                    &copy; Copyright @DateTime.Now.Year  - All Rights Reserved - <a href="#">Muñoz Mite Mendoza</a>
+                <div class="footer-widget">
+                    <h4>From The Blog</h4>
+                    <ul class="blog">
+                        <li><a href="#">Lorem Ipsum Dolor</a><br/>
+                            Orciint erdum condimen terdum nulla mcorper elit nam curabitur... </li>
+                        <li><a href="#">Praesent Et Eros</a><br/>
+                            Orciint erdum condimen terdum nulla mcorper elit nam curabitur... </li>
+                        <li><a href="#">Suspendisse In Neque</a><br/>
+                            Orciint erdum condimen terdum nulla mcorper elit nam curabitur... </li>
+                        <li><a href="#">Suspendisse In Neque</a><br/>
+                            Orciint erdum condimen terdum nulla mcorper elit nam curabitur... </li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>We Are Social!</h4>
+                    <div id="social"> 
+                        <a href="https://twitter.com/FitnessDAW" class="s3d twitter" target="_blank"> Twitter <span class="icons twitter"></span> </a> 
+                        <a href="https://www.facebook.com/FitnessDAW?notif_t=fbpage_fan_invite" class="s3d facebook" target="_blank"> Facebook <span class="icons facebook"></span> </a>
+                    </div>
+                </div>
+                <div class="border2"></div>
+                <br />
+                <span class="copyright">
+                    <span class="left"><br />
+                        &copy; Copyright @DateTime.Now.Year  - All Rights Reserved - <a href="#">Muñoz Mite Mendoza</a>
+                    </span>
+                    <span class="right"><br />
+                        Espol - <a href="https://www.facebook.com/groups/301410086546520/">Desarrollo de Aplicaciones Web</a><br />
+                        <br>
+                        <br />
+                    </span>
                 </span>
-                <span class="right"><br />
-                    Espol - <a href="https://www.facebook.com/groups/301410086546520/">Desarrollo de Aplicaciones Web</a><br />
-                    <br>
-                    <br />
-                </span>
-            </span>
-        </footer>   
-
+            </footer>  
+             
         </div>
      
 
