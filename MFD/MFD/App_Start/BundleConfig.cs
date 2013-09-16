@@ -9,7 +9,9 @@ namespace MFD
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js", "~/Scripts/jquery.fancybox-1.3.4.pack.js", "~/Scripts/jquery.pikachoose.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.fancybox-1.3.4.pack.js", 
+                        "~/Scripts/jquery.pikachoose.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));

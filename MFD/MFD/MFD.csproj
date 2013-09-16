@@ -201,6 +201,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\FitnessDb.sdf" />
     <Content Include="Content\base.css" />
     <Content Include="Content\jquery.fancybox-1.3.4.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -397,9 +398,7 @@
     <Content Include="Views\QueBeber\Delete.cshtml" />
     <Content Include="Views\Articulo\Articulo.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
